@@ -22,12 +22,6 @@ public class UserService {
     @Autowired
     private UserRepository repository;
 
-    @Autowired
-    private PostRepository postRepository;
-
-    @Autowired
-    private CommentRepository commentRepository;
-
     public List<User> findAll(){
         return repository.findAll();
     }
